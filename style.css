@@ -1,14 +1,58 @@
-p{
-    font-size: 40px;
-    margin: 50vh auto;
-    color: firebrick;
-    font-weight: bold;
-    width: 200px;
-    text-align: center;
-}
-
 body{
 
     display: grid;
     background-color: #333;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.box{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items:flex-end;
+}
+
+.bar{
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: calc((100% - 20px)/5);
+    margin-right: 10px;
+}
+
+.bar.eua{
+    height: 91.76%;
+}
+
+.bar.china{
+    height: 67.44%;
+}
+  
+  .bar.japao{
+    height: 20.4%;
+}
+  
+  .bar.alemanha{
+    height: 16.92%;
+}
+  
+  .bar.reino-unido{
+    height: 12.44%;
+}
+
+p{
+    font-size: 15px;
+    margin: 2vh auto;
+    color: white;
+    font-weight:normal;
+    width: 600px;
+    text-align: center;
 }
