@@ -1,0 +1,14 @@
+p{
+    font-size: 40px;
+    margin: 50vh auto;
+    color: firebrick;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+body{
+
+    display: grid;
+    background-color: #333;
+}
