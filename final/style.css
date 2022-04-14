@@ -6,6 +6,11 @@
 
 }
 
+html {
+
+    scroll-behavior: smooth;
+}
+
 body{
 
     background-color: #667080;
@@ -15,15 +20,15 @@ body{
 
 }
 
-header, footer{
+header, .embrulho-footer{
 
     background-color: #9E77ED;
+    margin-bottom: 70px;
 
 }
 
 .titulo{
 
-    height: 10em;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -42,11 +47,10 @@ h1{
 
 article{
 
-    padding: 2.5em 30em;
+    max-width: 700px;
+    margin: 2.5em auto;
     
 }
-
-
 
 p{
 
@@ -61,8 +65,28 @@ p{
     
 }
 
+a.seta {
+
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3.5rem;
+    right: 2rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+a.seta img {
+
+    width: 100%;
+
+}
+
 footer {
 
+    max-width: 700px;
+    margin: 0 auto;
     height: 10rem;
     display: grid;
     grid-template-rows: auto auto;
@@ -71,19 +95,37 @@ footer {
 
 }
 
+
+
 footer > div {
 
     max-width: 700px;
     font-size: 0.8rem;
     color: #F4EBFF;
-    margin: 30px;
+    margin-left: 30px;
 
 }
 
 a > img {
 
     width: 30px;
-    margin: 30px;
+
+}
+
+.link {
+
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+    margin-left: 30px;
+
+}
+
+.link img {
+
+    margin: 0;
 
 }
 
@@ -302,13 +344,18 @@ h2 {
 
 }
 
+.grafico-2 img {
+
+    display: block;
+    width: 100%;
+
+}
+
 img{
 
     margin: 30px 0px;
 
 }
-
-
 
 .mapa {
 
@@ -322,14 +369,14 @@ img{
 .area-lista{
 
     display: grid;
-    max-width: 300px;
+    max-width: 700px;
     width: 100%;
     grid-template-columns: 50% 50%;
     padding: 3em 0;
 
 }
 
-.titulo{
+.titulo-lista{
 
     font-size: 1.6em;
     font-weight: bold;
